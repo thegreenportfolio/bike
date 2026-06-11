@@ -1,63 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Bike Ride Green – Support</title>
+
+  <meta name="description" content="Support page for Bike Ride Green. Get help, read FAQs, contact support, and learn about local ride tracking, optional online accounts, privacy, clubs, and challenges." />
+  <link rel="canonical" href="https://bike.thegreenportfolio.ca/support.html" />
+
+  <meta name="application-name" content="Bike Ride Green" />
+
   <style>
+    :root {
+      --bg-body: #f5f5f7;
+      --bg-card: #ffffff;
+      --border-card: #e5e5ea;
+      --accent: #2E7D32;
+      --accent-soft: #e4f4e8;
+      --text-main: #222222;
+      --text-sub: #666666;
+      --link: #0d8a25;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-body: #000000;
+        --bg-card: #1c1c1e;
+        --border-card: #3a3a3c;
+        --accent: #44d965;
+        --accent-soft: #062411;
+        --text-main: #f5f5f7;
+        --text-sub: #a1a1a6;
+        --link: #44d965;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      margin: 2rem auto;
-      max-width: 800px;
+      margin: 0;
       line-height: 1.6;
-      color: #333;
-      background: #f5f5f7;
-      padding: 1rem;
+      color: var(--text-main);
+      background: var(--bg-body);
+      -webkit-font-smoothing: antialiased;
     }
-    h1, h2 {
-      color: #2E7D32;
+
+    .page {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 32px 18px 40px;
     }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      border-radius: 24px;
+      padding: 32px 28px;
+      box-shadow: 0 10px 26px rgba(0, 0, 0, 0.04);
+    }
+
+    h1,
+    h2 {
+      color: var(--accent);
+    }
+
     h1 {
-      border-bottom: 2px solid #2E7D32;
-      padding-bottom: 0.3rem;
+      margin-top: 0;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 0.35rem;
+      font-size: clamp(30px, 5vw, 42px);
+      line-height: 1.15;
     }
+
+    h2 {
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      font-size: 24px;
+    }
+
     p {
       margin-bottom: 1rem;
     }
+
+    a {
+      color: var(--link);
+      font-weight: 600;
+    }
+
+    ul {
+      padding-left: 1.4rem;
+    }
+
+    .intro {
+      font-size: 17px;
+      color: var(--text-sub);
+    }
+
+    .notice {
+      background: var(--accent-soft);
+      border: 1px solid var(--border-card);
+      border-radius: 18px;
+      padding: 16px 18px;
+      margin: 22px 0;
+      color: var(--text-main);
+    }
+
+    .faq-item {
+      margin-bottom: 1.4rem;
+    }
+
+    .faq-item p {
+      margin: 0.25rem 0 0;
+      color: var(--text-sub);
+    }
+
+    .footer-links {
+      margin-top: 28px;
+      text-align: center;
+    }
+
+    .footer-links a {
+      display: inline-block;
+      margin: 6px 8px;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
     footer {
       margin-top: 2rem;
       font-size: 0.9em;
-      color: #666;
+      color: var(--text-sub);
       text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .page {
+        padding: 18px 12px 32px;
+      }
+
+      .card {
+        padding: 24px 18px;
+        border-radius: 20px;
+      }
     }
   </style>
 </head>
+
 <body>
-  <h1>Bike Ride Green – Support</h1>
-  <p><em>Need help? We’re here for you.</em></p>
+  <main class="page">
+    <div class="card">
+      <h1>Bike Ride Green – Support</h1>
 
-  <h2>📧 Contact</h2>
-  <p>If you have any issues, questions, or feedback, please reach out:</p>
-  <ul>
-    <li>Email: <a href="mailto:support@thegreenportfolio.ca">support@thegreenportfolio.ca</a></li>
-  </ul>
+      <p class="intro">
+        <em>Need help? We’re here for you.</em>
+      </p>
 
-  <h2>❓ FAQ</h2>
-  <p><strong>Q: Does Bike Ride Green require an account?</strong><br>
-  A: No, all ride data stays on your device only.</p>
+      <div class="notice">
+        Bike Ride Green works without an account for local ride tracking. An optional online account can be created inside the iPhone app if you choose to upload selected ride summaries, view your online dashboard, or use private groups, clubs, and challenges.
+      </div>
 
-  <p><strong>Q: Can I use the app offline?</strong><br>
-  A: Yes, the app works completely offline.</p>
+      <h2>📧 Contact</h2>
+      <p>If you have any issues, questions, or feedback, please reach out:</p>
+      <ul>
+        <li>
+          Email:
+          <a href="mailto:support@thegreenportfolio.ca">support@thegreenportfolio.ca</a>
+        </li>
+      </ul>
 
-  <p><strong>Q: Does the app share my location?</strong><br>
-  A: No, GPS data is stored locally and never transmitted.</p>
+      <h2>❓ FAQ</h2>
 
-  <h2>💡 Feedback</h2>
-  <p>We welcome suggestions to make Bike Ride Green even better.
-Send us an email anytime — we’d love to hear from you.</p>
+      <div class="faq-item">
+        <strong>Q: Does Bike Ride Green require an account?</strong>
+        <p>
+          A: No. You can use Bike Ride Green for local ride tracking without creating an account. An optional online account can be created inside the iPhone app if you choose to upload selected ride summaries, view your online dashboard, or use private groups, clubs, and challenges.
+        </p>
+      </div>
 
-  <footer>
-    <p>© 2025 The Green Portfolio – All rights reserved</p>
-  </footer>
+      <div class="faq-item">
+        <strong>Q: Can I use the app offline?</strong>
+        <p>
+          A: Yes. Local ride tracking works without an online account. Some optional online features, such as uploading ride summaries or viewing your online dashboard, require an internet connection.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <strong>Q: Does the app share my location?</strong>
+        <p>
+          A: Your ride data stays on your device by default. If you choose to upload selected ride summaries to your Bike Ride Green account, only the data you choose to upload is used for your online dashboard, private groups, clubs, or challenges.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <strong>Q: Can I delete my online data?</strong>
+        <p>
+          A: Yes. If you create an optional online account, you can delete your online ride data or delete your account from inside the app.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <strong>Q: Is Bike Ride Green a medical device?</strong>
+        <p>
+          A: No. Bike Ride Green provides fitness and ride estimates for general guidance only. Calorie, elevation, distance, and speed values may vary depending on GPS signal, device sensors, terrain, and outdoor conditions.
+        </p>
+      </div>
+
+     <h2>🚴 Cycling Clubs</h2>
+<p>
+  Bike Ride Green supports private groups and cycling clubs through optional online ride summaries and dashboard features.
+</p>
+<p>
+  To use the clubs portal, you must first create a Bike Ride Green account inside the iPhone app. After your account is created in the app, you can use the clubs portal to view your online dashboard and club-related ride summaries.
+</p>
+<p>
+  Learn more here:
+  <a href="https://bikeridegreen.ca/" target="_blank" rel="noopener">Bike Ride Green Clubs Portal</a>
+</p>
+
+      <h2>💡 Feedback</h2>
+      <p>
+        We welcome suggestions to make Bike Ride Green even better. Send us an email anytime — we’d love to hear from you.
+      </p>
+
+      <div class="footer-links">
+        <a href="./index.html">← Back to Bike Ride Green</a>
+        <a href="./privacy.html">Privacy Policy</a>
+        <a href="https://bikeridegreen.ca/" target="_blank" rel="noopener">Clubs Portal</a>
+      </div>
+
+      <footer>
+        <p>© 2026 The Green Portfolio – All rights reserved</p>
+      </footer>
+    </div>
+  </main>
 </body>
 </html>
