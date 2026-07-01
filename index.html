@@ -15,10 +15,15 @@
   <meta name="twitter:card" content="summary_large_image" />
 
   <meta name="application-name" content="Bike Ride Green">
-<link rel="canonical" href="https://bike.thegreenportfolio.ca/">
+  <link rel="canonical" href="https://bike.thegreenportfolio.ca/">
 
-<!-- App Store Smart Banner -->
-<meta name="apple-itunes-app" content="app-id=6753626587" />
+  <!-- Safari / Favorites / App Icons -->
+ <link rel="icon" type="image/png" href="./assets/icon.png">
+    <link rel="apple-touch-icon" href="./assets/icon.png">
+  <meta name="theme-color" content="#0d8a25">
+
+  <!-- App Store Smart Banner -->
+  <meta name="apple-itunes-app" content="app-id=6753626587" />
 
 <!-- Meta Pixel Code -->
 <script>
@@ -210,7 +215,22 @@ fbq('track', 'PageView');
       font-size: 14px;
       color: var(--text-sub);
     }
+.creator-link {
+  font-weight: 700;
+  text-decoration: none;
+}
 
+.creator-link:hover {
+  text-decoration: underline;
+}
+
+.event-link {
+  color: #2f8cff;
+}
+
+.maze-link {
+  color: #0d8a25;
+}
     /* INTRO */
 
     .intro {
@@ -506,14 +526,15 @@ fbq('track', 'PageView');
 
 <div class="hero-trial" style="margin-top:6px;">
   From the same creator as
-  <a href="https://maze.thegreenportfolio.ca/" target="_blank" rel="noopener">
-    <strong>Trivia Maze</strong>
+  <a class="creator-link event-link" href="https://eventradar.thegreenportfolio.ca/" target="_blank" rel="noopener">
+    <strong>Event Radar</strong>
   </a>
   and
-  <a href="https://eventradar.thegreenportfolio.ca/" target="_blank" rel="noopener">
-    <strong>Event Radar</strong>
+  <a class="creator-link maze-link" href="https://maze.thegreenportfolio.ca/" target="_blank" rel="noopener">
+    <strong>Trivia Maze</strong>
   </a>.
 </div>
+  
       </div>
   </header>
 
