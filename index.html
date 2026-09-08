@@ -190,6 +190,37 @@
       border-color: var(--pill-border);
     }
 
+    .play-pill-row {
+      display: flex;
+      justify-content: center;
+      margin-top: 14px;
+    }
+
+    .play-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 210px;
+      height: 42px;
+      gap: 8px;
+      padding: 0 18px;
+      border-radius: 999px;
+      background: #eaf3ff;
+      border: 1px solid #b7d7ff;
+      color: #1f6fd6;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .play-pill {
+        background: #08192d;
+        border-color: #1f5f9f;
+        color: #8fc7ff;
+      }
+    }
+
     .hero-btn-secondary:hover {
       background: rgba(255, 255, 255, 0.9);
       transform: translateY(-1px);
@@ -465,7 +496,7 @@
   <img src="./assets/icon.png"
        alt="Bike Ride Green icon"
        class="hero-pill-icon">
-  <span>Bike Ride Green for iPhone</span>
+  <span>Bike Ride Green for iPhone and Android</span>
 </div>
 
     <h1 class="hero-title">Bike Ride Green – Track. Improve. Enjoy.</h1>
@@ -489,6 +520,17 @@
 
   <a class="hero-btn-secondary" href="#features">
     See key features
+  </a>
+</div>
+
+<div class="play-pill-row">
+  <a
+    class="play-pill"
+    href="https://play.google.com/store/apps/details?id=ca.thegreenportfolio.bikeridegreen&amp;pli=1"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    🤖 Get it on Google Play
   </a>
 </div>
 
